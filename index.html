@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="overflow: hidden;position: absolute;">
+<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <a-assets>
+        <a-asset-item id="lemonModel" src="./lemon/scene.gltf"></a-asset-item>
+    </a-assets>
+    <!--<a-light color="yellow" position="-1 1 0"></a-light>
+    <a-light color="yellow" position="0.988 0.894 2.872"></a-light>-->
+    <a-marker type="pattern" preset="custom" url="./pattern-lemon.patt">
+        <a-entity gltf-model="#lemonModel" position="-0.390 0.5 -18.850"
+                  scale="1 1.15 1"
+                  modify-materials></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
