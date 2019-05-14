@@ -13,8 +13,7 @@
 <a-scene>
     <a-assets>
         <a-asset-item id="lemon" src="https://hanyutang-sandra.github.io/AR-prototype/lemon/scene.gltf"></a-asset-item>
-        <a-asset-item id="diamond-obj" src="https://hanyutang-sandra.github.io/AR-prototype/diamond/diamond.obj"></a-asset-item>
-        <a-asset-item id="diamond-mtl" src="https://hanyutang-sandra.github.io/AR-prototype/diamond/diamond.mtl"></a-asset-item>
+        <a-asset-item id="robot" src="https://hanyutang-sandra.github.io/AR-prototype/robot/scene.gltf"></a-asset-item>
     </a-assets>
 
    <!--<a-marker type="pattern" preset="custom" url="https://hanyutang-sandra.github.io/AR-prototype/pattern-lemon.patt">-->
@@ -25,7 +24,7 @@
                  position="-0.559, 0.568 -13.613"
                  rotation="-0.160 -0.020 90.000"
                  modify-materials></a-entity>-->
-       <a-entity obj-model="obj: #diamond-obj; mtl: #diamond-mtl"></a-entity>
+       <a-entity gltf-model="#robot"></a-entity>
    <!--</a-marker>-->
 
     <!--<a-entity camera></a-entity>-->
