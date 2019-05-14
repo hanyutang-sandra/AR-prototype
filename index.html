@@ -11,14 +11,19 @@
 <body style="width: 100%; height: 100%; margin : 0; overflow: hidden;">
 <a-scene embedded arjs>
     <a-assets>
-        <a-asset-item id="lemonModel" src="https://hanyutang-sandra.github.io/AR-prototype/lemon/scene.gltf"></a-asset-item>
+        <a-asset-item id="lemon" src="https://hanyutang-sandra.github.io/AR-prototype/lemon/scene.gltf"></a-asset-item>
     </a-assets>
-   <a-marker type="pattern" preset="custom" url="https://hanyutang-sandra.github.io/AR-prototype/pattern-ball.patt">
-       <!--<a-box position='0 0.5 0' material='color: yellow;'></a-box>-->
-       <a-sphere position="0 0.5 0" radius="1.25" color="#EF2D5E"></a-sphere>
-       <!--<a-entity gltf-model="#lemonModel" position="-5.5 -1 -1.5" scale="0.3 0.3 0.3"
-                 modify-materials></a-entity>-->
-    </a-marker>
+
+   <a-marker type="pattern" preset="custom" url="https://hanyutang-sandra.github.io/AR-prototype/pattern-lemon.patt">
+       <!--<a-sphere position="0 0.5 0"
+                 radius="1.25"
+                 color="#EF2D5E"></a-sphere>-->
+       <a-entity gltf-model="#lemon"
+                 position="-0.559, 0.568 -13.613"
+                 rotation="-0.160 -0.020 90.000"
+                 modify-materials></a-entity>
+   </a-marker>
+
     <a-entity camera></a-entity>
 </a-scene>
 </body>
